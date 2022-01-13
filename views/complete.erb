@@ -48,23 +48,23 @@
             <tr>
                 <th>会社名</th>
                 <th><%= company %></th>
-            </th>
+            </tr>
             <tr>
                 <th>氏名</th>
                 <th><%= name %></th>
-            </th>
+            </tr>
             <tr>
                 <th>メール</th>
                 <th><%= mail %></th>
-            </th>
+            </tr>
             <tr>
                 <th>電話番号</th>
                 <th><%= tel %></th>
-            </th>
+            </tr>
             <tr>
                 <th>内容</th>
-                <th><%= content %></th>
-            </th>
+                <th><%= content.gsub(/\r\n|\r|\n/, "<br>") %></th>
+            </tr>
         </table>
         <div class="text-center mb-4">
             <!-- 「戻る」ボタンを緑色にする設定を追加 -->
